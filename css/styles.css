@@ -25,10 +25,10 @@ img {
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     img {
-        width: 300px;
-        height: 200px;
+        width: 150px !important;
+        height: 100px;
     }
 }
 
