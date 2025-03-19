@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+.route-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.route {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.route img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    transition: filter 0.3s;
+}
+
+.route span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.route:hover img {
+    filter: blur(3px);
+}
+
+.route:hover span {
+    opacity: 1;
+}
+
+.btn-success {
+    background-color: #FF5722;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #e64a19;
+}
+
+.flatpickr-calendar {
+    background-color: #333;
+    border: 2px solid #FF5722;
+}
+
+.flatpickr-input {
+    background-color: #444;
+    color: white;
+    border: 1px solid #FF5722;
+}
+
+.flatpickr-day.selected {
+    background-color: #FF5722 !important;
+}
+
+.flatpickr-time {
+    background-color: #444;
+    color: white;
+}
